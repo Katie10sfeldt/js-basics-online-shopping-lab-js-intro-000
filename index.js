@@ -29,7 +29,7 @@ function viewCart() {
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].price}.`
   } else {
     for (let i = 1; i < cart.length; i++) {
-      if (i === cart.length - 1){
+      if (i === cart.length){
         list.push(` ${cart[i].itemName} at $${cart[i].price}`)
       }
       list.push(` ${cart[i].itemName} at $${cart[i].price}, and`);
