@@ -10,7 +10,6 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
  var price = Math.floor(Math.random() * 100 + 1);
  cart.push({
    itemName: `${item}`,
@@ -37,7 +36,6 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
   var total = 0;
   for (let i = 0; i < cart.length; i++) {
     total = total + cart[i].itemPrice;
@@ -46,7 +44,6 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
   for (let i = 0; i < cart.length; i++) {
     if (item === cart[i].itemName) {
       cart.splice(i, 1);
@@ -54,7 +51,6 @@ function removeFromCart(item) {
     }
   }
   return 'That item is not in your cart.'
-
 }
 
 function placeOrder(cardNumber) {
