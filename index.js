@@ -25,11 +25,11 @@ function viewCart() {
   if (!cart.length) {
     return 'Your shopping cart is empty.';
   } else if (cart.length === 1) {
-    return `In your cart, you have ${cart[0].itemName} at $${cart[0].price}.`
+    return `In your cart, you have ${cart[0].itemName} at $undefined.`
   } else if (cart.length === 2) {
-    return `In your cart, you have ${cart[0].itemName} at $${cart[0].price}, and ${cart[1].itemName} at $${cart[1].price}.`
+    return `In your cart, you have ${cart[0].itemName} at $undefined, and ${cart[1].itemName} at $undefined.`
   } else if (cart.length === 3) {
-    return `In your cart, you have ${cart[0].itemName} at $${cart[0].price}, ${cart[1].itemName} at $${cart[1].price}, and ${cart[2].itemName} at $${cart[2].price}.`
+    return `In your cart, you have ${cart[0].itemName} at $undefined, ${cart[1].itemName} at $undefined, and ${cart[2].itemName} at $undefined.`
   }
 }
 
