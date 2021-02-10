@@ -33,7 +33,7 @@ function viewCart() {
     var last = `, and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
 
     for (var i = 0; i < cart.length-1; i++){
-    mid.push(` `+cart[i].itemName + ` at $` +cart[i].itemPrice)
+    mid.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
             }
          }
   return beggining + mid + last
