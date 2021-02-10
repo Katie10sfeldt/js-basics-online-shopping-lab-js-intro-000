@@ -28,15 +28,15 @@ function viewCart() {
 
   } else {
 
-    var beggining = `In your cart, you have`
+    var start = `In your cart, you have`
     var mid = []
-    var last = `, and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
+    var end = `, and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
 
     for (var i = 0; i < cart.length-1; i++){
     mid.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
             }
          }
-  return beggining + mid + last
+  return start + mid + end
 }
 
 function total() {
