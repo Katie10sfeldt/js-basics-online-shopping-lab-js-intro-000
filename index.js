@@ -21,14 +21,14 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  if (!cart.length) {
+  if (cart.length === 0) {
     return 'Your shopping cart is empty.';
-  } else if (cart.length === 1) {
-    return `In your cart, you have ${cart[0].itemName} at $undefined.`
-  } else if (cart.length === 2) {
-    return `In your cart, you have ${cart[0].itemName} at $undefined, and ${cart[1].itemName} at $undefined.`
-  } else if (cart.length === 3) {
-    return `In your cart, you have ${cart[0].itemName} at $undefined, ${cart[1].itemName} at $undefined, and ${cart[2].itemName} at $undefined.`
+  } else if(cart.length === 1) {
+    return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
+  } else {
+    var start = 'In your cart, you have ';
+    var mid = [];
+    var end = `, and ${cart[cart.length-1].itemName} at ${cart[cart.length-1].itemPrice}.`
   }
 }
 
