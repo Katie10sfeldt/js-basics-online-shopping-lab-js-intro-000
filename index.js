@@ -29,6 +29,11 @@ function viewCart() {
     var start = 'In your cart, you have ';
     var mid = [];
     var end = `, and ${cart[cart.length-1].itemName} at ${cart[cart.length-1].itemPrice}.`
+
+    for (let i = 0; i < cart.length; i++) {
+      mid.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
+    }
+    return start + mid + end;
   }
 }
 
